@@ -38,6 +38,8 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
+	//NLP
+	implementation("org.apache.opennlp:opennlp-tools:2.5.3")
 }
 
 tasks.named('test') {

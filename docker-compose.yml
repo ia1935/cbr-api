@@ -1,15 +1,11 @@
-version: '3.8'
-
+version: '3'
 services:
-  app:
-    build: .
-    container_name: my-springboot-app
+  cbr-api:
+    build:
+      context: .  # Use the current directory as build context
+      dockerfile: Dockerfile  # Explicitly specify the Dockerfile
+    volumes:
+      - ./data:/app/data  # Mount the data directory to persist data
     ports:
       - "8080:8080"
-    volumes:
-      - ./mydatabase.db:/app/mydatabase.db  # Persist SQLite DB
-    environment:
-      - SPRING_DATASOURCE_URL=jdbc:sqlite:/app/mydatabase.db
-      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
 
-        

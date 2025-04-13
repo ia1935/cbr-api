@@ -10,4 +10,6 @@ public class CbrapiApplication {
 		SpringApplication.run(CbrapiApplication.class, args);
 	}
 
+
+
 }
