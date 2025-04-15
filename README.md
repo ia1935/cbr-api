@@ -26,10 +26,14 @@ A Spring Boot-based API that implements a Case-Based Reasoning model to analyze 
 ```bash
 git clone https://github.com/ia1935/cbr-api.git
 cd cbr-api
-
+```
+2. Build the gradle snapshot
+```bash 
+./gradlew build
+```
 
 ```
-2. Run the docker image:
+3. Run the docker image:
 ```bash 
 docker-compose up --build
 ```
